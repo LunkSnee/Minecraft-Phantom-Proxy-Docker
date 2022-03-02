@@ -5,12 +5,12 @@ services:
     image: nkelemen18/minecraft-phantom-proxy:latest
     container_name: phantom-proxy
     environment:
-      SERVER: example.com:19132
-      #BIND_PORT: 0
-      #BIND_IP: 0.0.0.0
-      #TIMEOUT: 60
-      #IPV6: 1
-      #DEBUG: 1
-      #REMOVE_PORTS: 1
-      #WORKERS: 16
+      - SERVER=example.com:19132
+      # - BIND_PORT=0
+      # - BIND_IP=0.0.0.0
+      # - TIMEOUT=60
+      # - IPV6=1
+      # - DEBUG=1
+      # - REMOVE_PORTS=1
+      # - WORKERS=16
     network_mode: host
