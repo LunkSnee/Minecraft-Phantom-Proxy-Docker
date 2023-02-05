@@ -15,7 +15,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: minecraft-phantom-proxy
+  IMAGE_NAME: lunksnee/minecraft-phantom-proxy
 
 jobs:
   build-and-push-image:
