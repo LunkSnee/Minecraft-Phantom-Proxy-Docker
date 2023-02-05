@@ -1,11 +1,12 @@
-version: '3.4'
+version: '3.5'
 
 services:
   phantom-proxy:
-    image: lunksnee/minecraft-phantom-proxy:latest
+    image: ghcr.io/lunksnee/minecraft-phantom-proxy:latest
     container_name: phantom-proxy
+    network_mode: host  # only works with this mode
     environment:
-      - SERVER=example.com:19132
+      - SERVER=example.com:19132 # replace example.com with your remote server address
       # - BIND_PORT=0
       # - BIND_IP=0.0.0.0
       # - TIMEOUT=60
@@ -13,4 +14,3 @@ services:
       # - DEBUG=1
       # - REMOVE_PORTS=1
       # - WORKERS=16
-    network_mode: host
