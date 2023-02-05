@@ -2,7 +2,7 @@
 
 ## Basic usage:
 ```bash
-docker container run --name phantom-proxy -e SERVER=<server ip>:<server_port> --network host nkelemen18/minecraft-phantom-proxy:latest
+docker container run --name phantom-proxy -e SERVER=<server ip>:<server_port> --network host ghcr.io/lunksnee/minecraft-phantom-proxy:latest
 ```
 Or with docker compose:
 
@@ -10,7 +10,7 @@ Or with docker compose:
 docker-compose up -d
 ```
 
-[Example docker-compose file](https://github.com/nkelemen18/Minecraft-Phantom-Proxy-Docker/blob/master/docker-compose.yml)
+[Example docker-compose file](https://github.com/lunksnee/Minecraft-Phantom-Proxy-Docker/blob/master/docker-compose.yml)
 
 ### Available variables:
 
@@ -25,9 +25,7 @@ docker-compose up -d
 
 *Note: host network mode required.*
 
-[Github repo](https://github.com/nkelemen18/Minecraft-Phantom-Proxy-Docker)
-
-[Dockerhub](https://hub.docker.com/repository/docker/nkelemen18/minecraft-phantom-proxy)
+[Github repo](https://github.com/lunksnee/Minecraft-Phantom-Proxy-Docker)
 
 The proxy is written by jhead.
 [Phantom on GitHub](https://github.com/jhead/phantom)
